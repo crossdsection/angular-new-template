@@ -1,0 +1,16 @@
+<div>
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li (click)="carouselToggle('0')" [ngClass]="{'active': (selectedImage == 0), 'deactivate': (selectedImage != 0 )}"></li>
+    <li (click)="carouselToggle('1')" [ngClass]="{'active': (selectedImage == 1), 'deactivate': (selectedImage != 1 )}"></li>
+    <li (click)="carouselToggle('2')" [ngClass]="{'active': (selectedImage == 2), 'deactivate': (selectedImage != 2 )}"></li>
+  </ol>
+  <!--/.Indicators-->
+  <!--Slides-->
+  <div class="carousel-inner">
+    <div [@visibilityChanged]="selectedImage == 0" class="teaser-background-image" style="background-image: url('https://werbeagentur-blauzweig.de/wp-content/uploads/CI-CD_v2b-1.jpg');"></div>
+    <div [@visibilityChanged]="selectedImage == 1" class="teaser-background-image" style="background-image: url('https://werbeagentur-blauzweig.de/wp-content/uploads/bg_foto_v02b.jpg');"></div>
+    <div [@visibilityChanged]="selectedImage == 2" class="teaser-background-image" style="background-image: url('https://werbeagentur-blauzweig.de/wp-content/uploads/slide_website_V2f-1.jpg');"></div>
+  </div>
+  <!--/.Slides-->
+</div>

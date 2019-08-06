@@ -1,0 +1,18 @@
+.container {
+  margin: 0;
+  padding: 0;
+  position:absolute;
+  top: 0;
+  height: 100%;
+  font-family: 'Poiret One', sans-serif;
+  color: white;
+}
+
+.content {
+  margin: 4%;
+  font-size: 30px;
+}
+
+.content h1 {
+  font-size: 50px;
+}

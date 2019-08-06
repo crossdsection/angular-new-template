@@ -1,0 +1,13 @@
+/* Add application styles & imports to this file! */
+/* html {
+    background: #FF5252;
+    background-color: #FF5252;
+} */
+
+body {
+  background-image: linear-gradient(to right, #FF5252, rgba(41,46,53,0.95));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* height: 100vh; */
+  /* font-family: "Open Sans", sans-serif; */
+}

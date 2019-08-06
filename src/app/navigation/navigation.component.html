@@ -12,14 +12,6 @@
   <app-home *ngIf="show.home"></app-home>
   <app-aboutus *ngIf="show.aboutus"></app-aboutus>
   <app-philosophy *ngIf="show.philosophy"></app-philosophy>
-  <app-industrial-training-module *ngIf="show.industrialTrainingModule"></app-industrial-training-module>
-  <app-workshop *ngIf="show.workshop"></app-workshop>
-  <app-tose-talk *ngIf="show.toseTalk"></app-tose-talk>
-  <app-career-mantra *ngIf="show.careerMantra"></app-career-mantra>
-  <app-industry-affiliates *ngIf="show.affiliates"></app-industry-affiliates>
-  <app-show *ngIf="show.show"></app-show>
-  <app-ask-an-expert *ngIf="show.askAnExpert"></app-ask-an-expert>
-  <app-society *ngIf="show.society"></app-society>
   <app-contact-us *ngIf="show.contactUs"></app-contact-us>
 </div>
 
@@ -27,25 +19,13 @@
   <nav class="overlay-menu">
     <ul>
       <li>
-        <a href="#" (click)="menuClicked('weare', $event)">Who We Are?</a>
-        <ul class="submenu" *ngIf="show.weare">
+        <a href="#" (click)="menuClicked('aboutus', $event)">About Us</a>
+        <!-- <ul class="submenu" *ngIf="show.weare">
           <li><a href="#" (click)="menuClicked('aboutus', $event)">About Us</a></li>
           <li><a href="#" (click)="menuClicked('philosophy', $event)">TOSE General Philosophy</a></li>
-        </ul>
+        </ul> -->
       </li>
-      <li>
-        <a href="#" (click)="menuClicked('wedo', $event)">What We Do?</a>
-        <ul class="submenu" *ngIf="show.wedo">
-          <li><a href="#" (click)="menuClicked('industrialTrainingModule', $event)">Industrial Training Modules</a></li>
-          <li><a href="#" (click)="menuClicked('workshop', $event)">Workshops in Schools</a></li>
-          <li><a href="#" (click)="menuClicked('toseTalk', $event)">TOSE Talk</a></li>
-          <li><a href="#" (click)="menuClicked('careerMantra', $event)">Career Mantra@TOSE</a></li>
-        </ul>
-      </li>
-      <li><a href="#" (click)="menuClicked('affiliates', $event)">TOSE Industry Affiliates</a></li>
-      <li><a href="#" (click)="menuClicked('show', $event)">Welcome to the show</a></li>
-      <li><a href="#" (click)="menuClicked('askAnExpert', $event)">Ask An Expert</a></li>
-      <li><a href="#" (click)="menuClicked('society', $event)">Tose Society</a></li>
+      <li><a href="#" (click)="menuClicked('philosophy', $event)">Philosophy</a></li>
       <li><a href="#" (click)="menuClicked('contactUs', $event)">Contact Us</a></li>
     </ul>
   </nav>

@@ -1,18 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 export class showObject {
-  weare : Boolean = false;
   aboutus: Boolean  = false; 
   philosophy: Boolean = false; 
-  wedo: Boolean = false;
-  industrialTrainingModule: Boolean = false;
-  workshop: Boolean = false;
-  toseTalk: Boolean = false; 
-  careerMantra: Boolean = false;
-  affiliates: Boolean = false;
-  show: Boolean = false;
-  askAnExpert: Boolean = false;
-  society: Boolean = false;
   contactUs: Boolean = false;
   home: Boolean = false;
 }
